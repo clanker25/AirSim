@@ -1,0 +1,42 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/main/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "ComputerVision",
+  "CameraDefaults": {
+   "CaptureSettings": [
+    {
+      "ImageType": 0,
+      "TargetGamma": 1.5,
+      "Width": 512,
+      "Height": 145,
+      "FOV_Degrees": 80
+    },
+    {
+      "ImageType": 1,
+      "Width": 256,
+      "Height": 144,
+      "FOV_Degrees": 80
+    },
+    {
+      "ImageType": 5,
+      "Width": 128,
+      "Height": 144,
+      "FOV_Degrees": 90
+    }
+  ]
+  },
+   "SubWindows": [
+    {"WindowID": 1, "CameraID": 1, "ImageType": 0, "Visible": true},
+    {"WindowID": 0, "CameraID": 2, "ImageType": 0, "Visible": true},
+    {"WindowID": 2, "CameraID": 2, "ImageType": 3, "Visible": false}	
+  ], 
+  "Recording": {
+    "RecordOnMove": false,
+    "RecordInterval": 1,
+    "Cameras": [
+	    { "CameraID": 1, "ImageType": 0, "PixelsAsFloat": false, "Compress": true },
+        { "CameraID": 2, "ImageType": 0, "PixelsAsFloat": true, "Compress": true },
+		{ "CameraID": 2, "ImageType": 3, "PixelsAsFloat": true, "Compress": true }
+    ]
+  } 
+}
